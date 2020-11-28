@@ -5,9 +5,9 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
  
-    [SerializeField] protected Transform positionOfSpawnedObject;
-    [SerializeField] protected GameObject prefabToSpawn;
-    [SerializeField] protected Vector3 velocityOfSpawnedObject;
+    [SerializeField] public Transform positionOfSpawnedObject;
+    [SerializeField] public GameObject prefabToSpawn;
+    [SerializeField] public Vector3 velocityOfSpawnedObject;
     private ForceMode2D forceMode = ForceMode2D.Impulse;
     private Rigidbody2D rb;
 

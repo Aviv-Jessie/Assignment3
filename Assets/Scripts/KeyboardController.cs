@@ -6,7 +6,8 @@ using UnityEngine;
 /**
  * This component moves its object when the player clicks the arrow keys.
  */
- [RequireComponent(typeof(ModeSwitcher))]
+[RequireComponent(typeof(ModeSwitcher))]
+[RequireComponent(typeof(Rigidbody2D))]
 public class KeyboardController: MonoBehaviour {
 
     [Tooltip("defence key to press, dafault=L")]

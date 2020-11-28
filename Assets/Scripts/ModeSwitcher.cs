@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Spawner))]
 public class ModeSwitcher : MonoBehaviour
@@ -15,9 +16,11 @@ public class ModeSwitcher : MonoBehaviour
     [SerializeField] float timeToWait = 1f;
     [Tooltip("to trigger with ball")]
     [SerializeField] string ballTag = "ball";
+    [Tooltip("on disqualification move to scane or just distroy the ball if is null")]
+    [SerializeField] string sceneName = null;
 
     private SpriteRenderer show;
-    enum PlayerMode {withBall,withoutBall,defender};
+    public enum PlayerMode {withBall,withoutBall,defender};
     private PlayerMode playerMode;
 
     // Start is called before the first frame update
@@ -25,6 +28,11 @@ public class ModeSwitcher : MonoBehaviour
     {
         show = GetComponent<SpriteRenderer>();
         playerMode = PlayerMode.withoutBall;
+    }
+
+    public ModeSwitcher.PlayerMode GetPlayerMode()
+    {
+        return playerMode;
     }
 
     public void SwitchToDefenderPlayer()
@@ -67,13 +75,17 @@ public class ModeSwitcher : MonoBehaviour
     }
     public void disqualification(){
         Debug.Log("disqualification");
-        Destroy(this.gameObject);
+        if(sceneName != null)
+        {
+            SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+        }else{
+            Destroy(this.gameObject);
+        }
     }
 
 
     private IEnumerator TimerToDisableDefender()
     {
-        Debug.Log("before waiting!!!");
         yield return new WaitForSeconds(timeToWait);    // wait "X" time (1sec default), to wait before change mode. 
         if(playerMode == PlayerMode.defender)
         {
