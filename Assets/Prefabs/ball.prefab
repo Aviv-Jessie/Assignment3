@@ -10,14 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5507618341651535259}
   - component: {fileID: 5507618341651535258}
-  - component: {fileID: 5507618341651535257}
-  - component: {fileID: -1617657026796708482}
   - component: {fileID: 6442575248839953906}
   - component: {fileID: -1614384624013428215}
   - component: {fileID: 2060762594}
   m_Layer: 9
   m_Name: ball
-  m_TagString: Untagged
+  m_TagString: ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86,33 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5507618341651535257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5507618341651535256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12a9181ebbc42d645b4674ca98190fa7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocity: {x: 0, y: 0, z: 0}
---- !u!114 &-1617657026796708482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5507618341651535256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1df313f41dcb84949962b0f31e8f8139, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggeringTag: Player
-  destroyMySelf: 1
 --- !u!58 &6442575248839953906
 CircleCollider2D:
   m_ObjectHideFlags: 0
