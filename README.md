@@ -1,3 +1,27 @@
+# טיוטה. יש להסביר באנגלית בצורה יפה
+
+רמות:
+להסיר באנגלית את ההבדלים ברמות
+רמה 1: המחשב משחק ברמה נמוכה.
+רמה 2: רמת התפיסות של המחשב טובה יותר.
+רמה 3: רמת הזריקות של המחשב טובה יותר.
+רמה 4: שחקן המחשב זז מהר יותר ונוסף כדור נוסף.
+
+(כאשר בין רמה לרמה ההבדלים נצברים, כאשר לדוגמה- ברמה 4 הוא גם מכיל את הקשיים של רמות 2,3..)
+
+
+רכיבים:
+1. CenterLine
+2.Background
+3.Players
+4. ball
+
+סקריפטים:
+ModeSwitchehr
+	בעיקר את שלושת המצבים
+
+
+
 Hello, Welcome to our games!
 
  We are learning PC-Game development, and our assignments its to make changes in spaceship game.
@@ -9,9 +33,7 @@ https://aviv-jessie.itch.io/assignment2-prefabs-triggers-c
 
 
 # Changes:
-* Assets\Scripts\KeyboardMoverWASD
-* Assets\Scripts\KeyboardSpawner
-* Assets\Scripts\TakeThaBall
+
 
 ## Credits
 ### Assignment solver
