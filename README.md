@@ -1,4 +1,6 @@
 # טיוטה. יש להסביר באנגלית בצורה יפה
+![alt text](https://github.com/Aviv-Jessie/Assignment3/blob/master/Screenshot_1.gif?raw=true)
+![alt text](https://github.com/Aviv-Jessie/Assignment3/blob/master/Screenshot_2.png?raw=true)
 רמות:
 להסביר באנגלית את ההבדלים ברמות
 להראות בצילום מסך מה לשנות בcompponetים.
