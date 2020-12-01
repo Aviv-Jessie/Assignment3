@@ -73,9 +73,8 @@ public class ModeSwitcher : MonoBehaviour
             SwitchToWithBallPlayer(other.gameObject);
         }
     }
-    public void disqualification(){
-        Debug.Log("disqualification");
-        if(sceneName != null)
+    public void disqualification(){    
+        if( !System.String.IsNullOrEmpty(sceneName) )
         {
             SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
         }else{

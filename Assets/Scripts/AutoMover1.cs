@@ -21,7 +21,7 @@ public class AutoMover1 : MonoBehaviour
         var rand = new System.Random();
         float Horizontal = (float)(rand.NextDouble() * 2 - 1);//random between -1 to 1.
         float Vertical = (float)(rand.NextDouble() * 2 - 1);//random between -1 to 1.
-        Vector3 movementVector = new Vector3(Horizontal*speed, Vertical*speed, 0);
+        Vector3 movementVector = new Vector3(Horizontal, Vertical, 0)*speed;
         rb.AddForce(movementVector, forceMode);
 
     }
