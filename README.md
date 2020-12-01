@@ -26,7 +26,7 @@ We use material to friction the ball and add Linear Drag in Rigidbody2D to make 
 
 # code
 
-## ModeSwitcher
+## ModeSwitcher.cs
 ModeSwitcher.cs.
 the player have three modes ![alt text](6)
 defender,withBall and withoutBall.
@@ -35,23 +35,35 @@ look the mode we come from and Switch if we can. if we can't the class Responds 
 for example if we switche from WithoutBall to WithBall It means the player disqualification 
 becuase call hit and he not in defender mod.
 
+## Spawner.cs
+Creates the ball to the position we defined in unity whene ModeSwitcher call to spawnObject() method.
+![alt text](7)
 
+## AutoCatch.cs
+redPlayer switch to defender mod every "timerToDefender" seconds.
 
+## AutoMover1.cs
+redPlayer move randomaly.
 
+## AutoSpawner.cs
+set velocityOfSpawnedObject to blue player direction and say to ModeSwitcher Switch to playerWithoutBall mode.
 
+## KeyboardController.cs
+use arrows to move blue player, "L" key to Switch to defender mode and "space" key to throw a ball.
 
+## SceneChooser.cs
+SceneChooser.cs only in the main meny 
 
-Hello, Welcome to our games!
+# Hello, Welcome to our games!
 
  We are learning PC-Game development, and our assignments its to make changes in spaceship game.
 
 We made another changes every section, in this section, we changed the walls attributes and collisions:
 
 the game:
-https://aviv-jessie.itch.io/assignment2-prefabs-triggers-c
+https://aviv-jessie.itch.io/assignment3
 
 
-# Changes:
 
 
 ## Credits
