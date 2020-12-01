@@ -1,18 +1,29 @@
+# Hello, Welcome to our Dodgeball game!
+
+ We are learning PC-Game development, and our assignments is to make dodgeball game.
+
+the game on itch website:
+https://aviv-jessie.itch.io/assignment3
+
+
+
 # difficulty level
 * easy - not difficult.
-* normal - computer catches better.
+* normal - the computer catches better.
 ![alt text](https://github.com/Aviv-Jessie/Assignment3/blob/master/1.png?raw=true)
-* hard - computer throw better.
+* hard - the computer throws better.
 ![alt text](https://github.com/Aviv-Jessie/Assignment3/blob/master/2.png?raw=true)
-* expert - computer catches faster and have more one ball.
+* expert - the computer catches faster and got another ball.
 ![alt text](https://github.com/Aviv-Jessie/Assignment3/blob/master/3.png?raw=true)
 
 # physics
 ## CenterLine
 ![alt text](https://github.com/Aviv-Jessie/Assignment3/blob/master/Screenshot_1.gif?raw=true)
 ![alt text](https://github.com/Aviv-Jessie/Assignment3/blob/master/Screenshot_2.png?raw=true)
-We put object eith edge collider and different layer.
-Ball ignore the centerLine and player not.
+
+We added an object with an edge collider and every object was put on a different layer
+
+The ball ignores the centerLine and the player not.
 
 ## Background
 simply edge collider
@@ -21,54 +32,49 @@ simply edge collider
 ![alt text](https://github.com/Aviv-Jessie/Assignment3/blob/master/4.png?raw=true)
 
 ## ball
-We use material to friction the ball and add Linear Drag in Rigidbody2D to make it stop on the flore.
+We use material to friction the ball and add Linear Drag in Rigidbody2D to make it stop on the floor.
 ![alt text](https://github.com/Aviv-Jessie/Assignment3/blob/master/5.png?raw=true)
 
 # code
 ## ModeSwitcher.cs]
 [ModeSwitcher.cs](https://github.com/Aviv-Jessie/Assignment3/blob/master/Assets/Scripts/ModeSwitcher.cs) 
 the player have three modes ![alt text](https://github.com/Aviv-Jessie/Assignment3/blob/master/6.png?raw=true)
-defender,withBall and withoutBall.
-the mhetods  SwitchToDefenderPlayer,SwitchToWithBallPlayer, SwitchToWithoutBallPlayer 
-look the mode we come from and Switch if we can. if we can't the class Responds accordingly.
-for example if we switche from WithoutBall to WithBall It means the player disqualification 
-becuase call hit and he not in defender mod.
+defender, withBall and withoutBall.
+
+the mhetods  SwitchToDefenderPlayer, SwitchToWithBallPlayer, SwitchToWithoutBallPlayer 
+
+we will check the mode that we arrived from, and Switch if we can.
+
+if we can't the class responds accordingly.
+
+for example if we switched from WithoutBall to WithBall It means the player is disqualification 
+
+becuase the ball hits the player and the player is not in defender mode.
 
 ## Spawner.cs
 [Spawner.cs](https://github.com/Aviv-Jessie/Assignment3/blob/master/Assets/Scripts/Spawner.cs)
-Creates the ball to the position we defined in unity whene ModeSwitcher call to spawnObject() method.
+Creates the ball to the position we defined in unity when ModeSwitcher call to spawnObject() method.
 ![alt text](https://github.com/Aviv-Jessie/Assignment3/blob/master/7.png?raw=true)
 
 ## AutoCatch.cs
 [AutoCatch.cs](https://github.com/Aviv-Jessie/Assignment3/blob/master/Assets/Scripts/AutoCatch.cs)
-redPlayer switch to defender mod every "timerToDefender" seconds.
+redPlayer switch to defender mode every "timerToDefender" seconds.
 
 ## AutoMover1.cs
 [AutoMover1.cs](https://github.com/Aviv-Jessie/Assignment3/blob/master/Assets/Scripts/AutoMover1.cs)
-redPlayer move randomaly.
+redPlayer moves randomaly.
 
 ## AutoSpawner.cs
 [AutoSpawner.cs](https://github.com/Aviv-Jessie/Assignment3/blob/master/Assets/Scripts/AutoSpawner.cs)
-set velocityOfSpawnedObject to blue player direction and say to ModeSwitcher Switch to playerWithoutBall mode.
+set velocityOfSpawnedObject to the blue players direction and tells the ModeSwitcher to Switch to the playerWithoutBall mode.
 
 ## KeyboardController.cs
 [KeyboardController.cs](https://github.com/Aviv-Jessie/Assignment3/blob/master/Assets/Scripts/KeyboardController.cs)
-use arrows to move blue player, "L" key to Switch to defender mode and "space" key to throw a ball.
+use arrows to move blue player, "L" key to Switch to defender mode and "space" key to throw the ball.
 
 ## SceneChooser.cs
 [SceneChooser.cs](https://github.com/Aviv-Jessie/Assignment3/blob/master/Assets/Scripts/SceneChooser.cs)
-SceneChooser.cs only in the main meny 
-
-# Hello, Welcome to our games!
-
- We are learning PC-Game development, and our assignments its to make changes in spaceship game.
-
-We made another changes every section, in this section, we changed the walls attributes and collisions:
-
-the game:
-https://aviv-jessie.itch.io/assignment3
-
-
+SceneChooser.cs only in the main menu 
 
 
 ## Credits
