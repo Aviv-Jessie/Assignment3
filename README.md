@@ -1,11 +1,11 @@
 # difficulty level
-* easy not difficult.
-* normal computer catches better.
-![alt text](1)
-* hard  computer throw better.
-![alt text](2)
-* expert computer catches faster and have more one ball.
-![alt text](3)
+* easy - not difficult.
+* normal - computer catches better.
+![alt text](https://github.com/Aviv-Jessie/Assignment3/blob/master/1.png?raw=true)
+* hard - computer throw better.
+![alt text](https://github.com/Aviv-Jessie/Assignment3/blob/master/2.png?raw=true)
+* expert - computer catches faster and have more one ball.
+![alt text](https://github.com/Aviv-Jessie/Assignment3/blob/master/3.png?raw=true)
 
 # physics
 ## CenterLine
@@ -18,17 +18,17 @@ Ball ignore the centerLine and player not.
 simply edge collider
 
 ## Players
-![alt text](4)
+![alt text](https://github.com/Aviv-Jessie/Assignment3/blob/master/4.png?raw=true)
 
 ## ball
 We use material to friction the ball and add Linear Drag in Rigidbody2D to make it stop on the flore.
-![alt text](5)
+![alt text](https://github.com/Aviv-Jessie/Assignment3/blob/master/5.png?raw=true)
 
 # code
 
 ## ModeSwitcher.cs
 ModeSwitcher.cs.
-the player have three modes ![alt text](6)
+the player have three modes ![alt text](https://github.com/Aviv-Jessie/Assignment3/blob/master/6.png?raw=true)
 defender,withBall and withoutBall.
 the mhetods  SwitchToDefenderPlayer,SwitchToWithBallPlayer, SwitchToWithoutBallPlayer 
 look the mode we come from and Switch if we can. if we can't the class Responds accordingly.
@@ -37,7 +37,7 @@ becuase call hit and he not in defender mod.
 
 ## Spawner.cs
 Creates the ball to the position we defined in unity whene ModeSwitcher call to spawnObject() method.
-![alt text](7)
+![alt text](https://github.com/Aviv-Jessie/Assignment3/blob/master/7.png?raw=true)
 
 ## AutoCatch.cs
 redPlayer switch to defender mod every "timerToDefender" seconds.
