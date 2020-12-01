@@ -1,33 +1,43 @@
-# טיוטה. יש להסביר באנגלית בצורה יפה
+# difficulty level
+* easy not difficult.
+* normal computer catches better.
+![alt text](1)
+* hard  computer throw better.
+![alt text](2)
+* expert computer catches faster and have more one ball.
+![alt text](3)
+
+# physics
+## CenterLine
 ![alt text](https://github.com/Aviv-Jessie/Assignment3/blob/master/Screenshot_1.gif?raw=true)
 ![alt text](https://github.com/Aviv-Jessie/Assignment3/blob/master/Screenshot_2.png?raw=true)
-רמות:
-להסביר באנגלית את ההבדלים ברמות
-להראות בצילום מסך מה לשנות בcompponetים.
+We put object eith edge collider and different layer.
+Ball ignore the centerLine and player not.
 
-רכיבים:
-1. CenterLine
- 	-לבראות צילום מסך עם השכבות
-2.Background
-	-צילום מסך עם הקווין הירוקים
-3.Players
-4. ball
-	-צילום מסך עם שיינווי החומר
+## Background
+simply edge collider
 
-סקריפטים:
-ModeSwitchehr
-	בעיקר את שלושת המצבים
-וגם את כל מה שבתיקייה script
+## Players
+![alt text](4)
 
-רכיבים:
-1. CenterLine
-2.Background
-3.Players
-4. ball
+## ball
+We use material to friction the ball and add Linear Drag in Rigidbody2D to make it stop on the flore.
+![alt text](5)
 
-סקריפטים:
-ModeSwitchehr
-	בעיקר את שלושת המצבים
+# code
+
+## ModeSwitcher
+ModeSwitcher.cs.
+the player have three modes ![alt text](6)
+defender,withBall and withoutBall.
+the mhetods  SwitchToDefenderPlayer,SwitchToWithBallPlayer, SwitchToWithoutBallPlayer 
+look the mode we come from and Switch if we can. if we can't the class Responds accordingly.
+for example if we switche from WithoutBall to WithBall It means the player disqualification 
+becuase call hit and he not in defender mod.
+
+
+
+
 
 
 
