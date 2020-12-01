@@ -36,7 +36,7 @@ We use material to friction the ball and add Linear Drag in Rigidbody2D to make 
 ![alt text](https://github.com/Aviv-Jessie/Assignment3/blob/master/5.png?raw=true)
 
 # code
-## ModeSwitcher.cs]
+## ModeSwitcher.cs
 [ModeSwitcher.cs](https://github.com/Aviv-Jessie/Assignment3/blob/master/Assets/Scripts/ModeSwitcher.cs) 
 the player have three modes ![alt text](https://github.com/Aviv-Jessie/Assignment3/blob/master/6.png?raw=true)
 defender, withBall and withoutBall.
